@@ -1,0 +1,18 @@
+// Delegue
+level stats
+
+// Admin
+general stats
+Supprimer utilisateur
+Changer le statut d'un utilisateur
+
+// End
+Relecture
+Correction du code
+Requetes double
+Requetes preparees
+Lignes inutiles
+Regroupement de fonctions
+Styles
+
+Informations du cahier jusqu'a jeudi 20 aout

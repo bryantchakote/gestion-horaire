@@ -1,0 +1,81 @@
+body{font-family:"Raleway","sans-serif"}
+button,input,select{outline:none}
+#user-img{width:45%}
+#user-img-resp{width:65px}
+.w3-container #logo-essfar{width:200px}
+#myOverlay{cursor:pointer}
+p{margin:0px; padding:1px 2px}
+.infos-container{
+  padding: 0px;
+  height: 100px;
+  background-color: #E7E7E7;
+  overflow: hidden;
+}
+.infos-container p:first-child{font-weight: bold}
+#logout{
+  background-color: inherit;
+  border: none;
+  margin-bottom: 12px;
+  color: #fff;
+}
+#logout:hover{text-decoration: underline}
+.select-table{height:40px}
+.users-list{width:175px}
+.w3-centered td:first-child{text-align: left}
+th{background-color: #408fb0; color: #FFF}
+.w3-table-all tr:first-child th{background-color: #1477a1}
+th[colspan]:hover{background-color:#b90d1d88}
+tr[class$=list]{display:none}
+
+.w3-table-all tr:nth-child(odd){background-color:#fff}.w3-table-all tr:nth-child(even){background-color:#17a8dc52}
+.w3-table-all tr:hover{background-color:#b90d1d38}
+
+.content > div{display:none}
+.content > div:last-child{display:block}
+
+.content i, table i{color:RGBa(185, 13, 29, 0.8)}
+.w3-hover-red:hover{color:#fff!important;background-color:RGBa(185, 13, 29, 0.8)!important}
+
+#chart-left{width: 530px}
+#chart-right{width: 430px}
+
+.display-none{display:none}
+td.padding-0{padding:0}
+
+/* Enregistrement */
+.enreg-right #delegue-label, .enreg-right #admin-label{position:relative; top:3px}
+.radio-lbl{position:relative; bottom:2px}
+
+.enreg-left, .enreg-right{width: 45%}
+#et-extensions, #stf-extensions{display: none}
+#enreg-submit, #enreg-reset{display: inline}
+#enreg-content{width:55%; border:none}
+#delegue-label, #admin-label{position:relative; top:15px}
+.enreg-left *[id$=validation], .enreg-right *[id$=validation]{
+    display: block;
+    position: absolute;
+    width: 231px;
+    color: #B22;
+}
+.enreg-left *[id$=validation]{text-align: right; left: 225px;}
+
+#name1-validation{top: 140px}
+
+#name2-validation{top: 194px}
+
+#sexe-validation{top: 250px}
+
+#email-validation{top: 305px}
+
+#pwd-length-validation{top: 361px}
+
+#pwd-validation{top: 415px}
+
+
+.enreg-right *[id$=validation]{text-align: left; left: 891px;}
+
+#user-type-validation{top: 100px}
+
+#mat-validation{top: 180px}
+
+#niv-validation{top: 270px}
