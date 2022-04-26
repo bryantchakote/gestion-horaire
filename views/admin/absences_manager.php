@@ -173,7 +173,7 @@ $lvlItem = $lvlSelect->rowCount();
           <a href="general_stats.php" class="w3-bar-item w3-button w3-hover-red w3-padding">Statistiques</a>
         </div>
         
-        <button type="submit" name="logout" value="logout" id="logout" class="w3-display-bottommiddle"><b>Deconnexion</b></button>
+        <button type="submit" name="logout" value="logout" id="logout" class="w3-display-bottommiddle"><b>Déconnexion</b></button>
       </form>  
     </nav>
     
@@ -195,12 +195,12 @@ $lvlItem = $lvlSelect->rowCount();
       
       <!-- Content -->
         <form method="post" action="../../models/actions.php" id="actions" class="w3-row-padding w3-padding-large w3-center">
-          <span><b>Journee du</b></span>
+          <span><b>Journée du</b></span>
           <input type="date" name="absence-day" id="absence-day" value="<?php echo (isset($_SESSION['absence-day']) && !empty($_SESSION['absence-day'])) ? $_SESSION['absence-day'] : $actualDate ?>" class="w3-button w3-hover-red w3-padding-small">
           
           <table class="w3-table-all w3-centered w3-hoverable w3-margin-top w3-margin-bottom">
             <tr>
-              <th>Noms &amp; prenoms</th>
+              <th>Noms &amp; prénoms</th>
               <th>Nombre d'heures</th>
               <th>Justification</th>
             </tr>
@@ -309,7 +309,7 @@ $lvlItem = $lvlSelect->rowCount();
           </table>
           
           <button type="submit" name="confirm-absences" value="confirm-absences" class="w3-button w3-hover-red w3-blue-grey w3-padding">Confirmer</button>
-          <button type="reset" class="w3-button w3-hover-red w3-blue-grey w3-padding">Reinitialiser</button>
+          <button type="reset" class="w3-button w3-hover-red w3-blue-grey w3-padding">Réinitialiser</button>
         </form>
     </div>
     

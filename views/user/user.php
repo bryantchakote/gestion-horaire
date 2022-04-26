@@ -106,7 +106,7 @@ $absencesSelect = $connexion->prepare("
           <button type="submit" name="display-choice" value="absences" id="absences" class="w3-bar-item w3-button  w3-hover-red w3-padding"><i class="fas fa-calendar-times w3-margin-right"></i>Mes absences (<?php echo ($absencesItemResult[0] == NULL) ? '0' : $absencesItemResult[0] ?>H)</button>
         </div>
         
-        <button type="submit" name="logout" value="logout" id="logout" class="w3-display-bottommiddle"><b>Deconnexion</b></button>
+        <button type="submit" name="logout" value="logout" id="logout" class="w3-display-bottommiddle"><b>Déconnexion</b></button>
       </form>  
     </nav>
 
@@ -229,7 +229,7 @@ $absencesSelect = $connexion->prepare("
         
         <!-- Infos journee -->
         <div class="w3-right">
-          <span><b>Afficher journee du</b></span>
+          <span><b>Afficher journée du</b></span>
           <input type="date" name="date-search" id="date-search" value="<?php echo date('Y-m-d') ?>" class="w3-hover-red w3-button w3-padding-small">
         </div>
       </div>
@@ -273,7 +273,7 @@ $absencesSelect = $connexion->prepare("
       // Deconnexion
       var logout = document.getElementById("logout");
       logout.addEventListener('click', function(event){
-        if(!confirm('Souhaitez-vous vraiment vous deconnecter?')) event.preventDefault();
+        if(!confirm('Souhaitez-vous vraiment vous déconnecter?')) event.preventDefault();
       });
 
       // Navigation (n'importe quel bouton)

@@ -107,7 +107,7 @@ if(isset($_POST['in-out-day']) && !empty($_POST['in-out-day'])){
     $dateVerificationResult = $dateVerification->fetch();
     
     if(!empty($dateVerificationResult)){
-      echo "<script>alert('Les informations concernant la date selectionnee existent deja')</script>";
+      echo "<script>alert('Les informations concernant la date selectionnée existent déjà')</script>";
       $_SESSION['existing-date'] = true;
     }
     else $_SESSION['selected-date'] = $_POST['in-out-day'];
@@ -165,7 +165,7 @@ if(isset($_POST['in-out-confirm']) && !empty($_POST['in-out-confirm'])){
       $absencesInsert->execute();
     }
   }
-  echo "<script>alert('Informations de la journee ajoutees avec succes');location.assign('../views/user/user.php')</script>";
+  echo "<script>alert('Informations de la journée ajoutées avec succès');location.assign('../views/user/user.php')</script>";
 }
 
 
@@ -244,7 +244,7 @@ if(isset($_POST['enreg-submit']) && !empty($_POST['enreg-submit'])){
   $userType->bindParam(':id_pers', $lastUserIdResult['id_pers']);
   $userType->execute();
     
-  echo "<script>alert('Utilisateur enregistre'); location.assign('../views/admin/user_registration.php')</script>";
+  echo "<script>alert('Utilisateur enregistré'); location.assign('../views/admin/user_registration.php')</script>";
 }
 
 // Statistiques
@@ -264,7 +264,7 @@ if(isset($_POST['general-stats-day']) && !empty($_POST['general-stats-day'])){
   }
     
   if(!$found){
-    echo "<script>alert('Aucune information pour la date selectionnee')</script>";
+    echo "<script>alert('Aucune information pour la date selectionnée')</script>";
     $_SESSION['general-stats-day'] = date('Y-m-d');
   }
   
@@ -287,7 +287,7 @@ if(isset($_POST['lvl-stats-day']) && !empty($_POST['lvl-stats-day'])){
   }
     
   if(!$found){
-    echo "<script>alert('Aucune information pour la date selectionnee')</script>";
+    echo "<script>alert('Aucune information pour la date selectionnée')</script>";
     $_SESSION['lvl-stats-day'] = date('Y-m-d');
   }
   

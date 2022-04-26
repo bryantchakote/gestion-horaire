@@ -1,18 +1,18 @@
-// Delegue
-level stats
+// Délégué
+Level stats
 
 // Admin
-general stats
+Général stats
 Supprimer utilisateur
 Changer le statut d'un utilisateur
 
 // End
 Relecture
 Correction du code
-Requetes double
-Requetes preparees
+Requêtes double
+Requêtes préparées
 Lignes inutiles
 Regroupement de fonctions
 Styles
 
-Informations du cahier jusqu'a jeudi 20 aout
+Informations du cahier jusqu'au jeudi 20 août

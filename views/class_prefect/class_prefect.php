@@ -106,7 +106,7 @@ else{
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Espace delegue</title>
+    <title>Espace délégué</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -194,7 +194,7 @@ else{
           <a href="level_stats.php" class="w3-bar-item w3-button w3-hover-red w3-padding">Statistiques</a>
         </div>
         
-        <button type="submit" name="logout" value="logout" id="logout" class="w3-display-bottommiddle"><b>Deconnexion</b></button>
+        <button type="submit" name="logout" value="logout" id="logout" class="w3-display-bottommiddle"><b>Déconnexion</b></button>
       </form>  
     </nav>
 
@@ -280,10 +280,10 @@ else{
               Absences <?php echo $resultAbsences['nbre_heures'] ?>H
               <?php
               if($resultAbsences['id_motif'] <= 2){
-                echo '<i title="Non justifiee" class="fas fa-question"></i>';
+                echo '<i title="Non justifiée" class="fas fa-question"></i>';
               }
               else
-                echo '<i title="Justifiee" class="fas fa-check"></i><br>Motif : ' .$resultAbsences['libelle'];
+                echo '<i title="Justifiée" class="fas fa-check"></i><br>Motif : ' .$resultAbsences['libelle'];
               ?>
             </p>
           <?php
@@ -317,7 +317,7 @@ else{
         
         <!-- Infos journee -->
         <div class="w3-right">
-          <span><b>Afficher journee du</b></span>
+          <span><b>Afficher journée du</b></span>
           <input type="date" name="date-search" id="date-search" value="<?php echo date('Y-m-d') ?>" class="w3-hover-blue-grey w3-button w3-hover-red w3-padding-small">
         </div>
       </div>

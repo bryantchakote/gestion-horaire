@@ -189,7 +189,7 @@ $lvlSelect->execute();
           <a href="level_stats.php" class="w3-bar-item w3-button w3-hover-red w3-padding">Statistiques</a>
         </div>
         
-        <button type="submit" name="logout" value="logout" id="logout" class="w3-display-bottommiddle"><b>Deconnexion</b></button>
+        <button type="submit" name="logout" value="logout" id="logout" class="w3-display-bottommiddle"><b>Déconnexion</b></button>
       </form>  
     </nav>
     
@@ -211,14 +211,14 @@ $lvlSelect->execute();
       
       <!-- Content -->
         <form method="post" action="../../models/actions.php" id="actions2" class="w3-row-padding w3-padding-large w3-center">
-          <span><b>Journee du</b></span>
+          <span><b>Journée du</b></span>
           <input type="date" name="lvl-stats-day" id="lvl-stats-day" value="<?php echo (isset($_SESSION['lvl-stats-day']) && !empty($_SESSION['lvl-stats-day'])) ? $_SESSION['lvl-stats-day'] : $actualDate ?>" class="w3-button w3-hover-red w3-padding-small">  
         </form>
       
           <table class="w3-table-all w3-centered w3-hoverable w3-margin-top w3-margin-bottom">
             <tr>
-              <th>Noms &amp; prenoms</th>
-              <th>Heure d'entree</th>
+              <th>Noms &amp; prénoms</th>
+              <th>Heure d'entrée</th>
               <th>Heure de sortie</th>
               <th>Absences</th>
               <th>Motif</th>

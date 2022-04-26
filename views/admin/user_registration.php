@@ -213,7 +213,7 @@ $lvlSelect->execute();
         
         if(n == 1){
           if(enregPrenom.value != ''){
-            m = namesEmailVerification(regNoms, enregPrenom, 'un prenom', name2Validation, event);
+            m = namesEmailVerification(regNoms, enregPrenom, 'un prénom', name2Validation, event);
             if(m == 124)
               n++;
           }
@@ -340,7 +340,7 @@ $lvlSelect->execute();
           <a href="general_stats.php" class="w3-bar-item w3-button w3-hover-red w3-padding">Statistiques</a>
         </div>
         
-        <button type="submit" name="logout" value="logout" id="logout" class="w3-display-bottommiddle"><b>Deconnexion</b></button>
+        <button type="submit" name="logout" value="logout" id="logout" class="w3-display-bottommiddle"><b>Déconnexion</b></button>
       </form>  
     </nav>
     
@@ -367,7 +367,7 @@ $lvlSelect->execute();
             <input class='w3-input w3-button w3-hover-white w3-margin-top w3-margin-bottom' type='text' name='enreg-nom' id='enreg-nom' required='required' placeholder='Nom'>
             <span id='name1-validation'></span>
 
-            <input class='w3-input w3-button w3-hover-white w3-margin-top w3-margin-bottom' type='text' name='enreg-prenom' id='enreg-prenom' placeholder='Prenom'>
+            <input class='w3-input w3-button w3-hover-white w3-margin-top w3-margin-bottom' type='text' name='enreg-prenom' id='enreg-prenom' placeholder='Prénom'>
             <span id='name2-validation'></span>
 
             <input class='w3-input w3-button w3-hover-white w3-margin-top w3-margin-bottom' type='text' name='enreg-sexe' id='enreg-sexe' required='required' placeholder='Sexe (M ou F)'>
@@ -376,7 +376,7 @@ $lvlSelect->execute();
             <input class='w3-input w3-button w3-hover-white w3-margin-top w3-margin-bottom' type='email' name='enreg-email' id='enreg-email' required='required' placeholder='Adresse mail'>
             <span id='email-validation'></span>
 
-            <input class='w3-input w3-button w3-hover-white w3-margin-top w3-margin-bottom' type='password' name='enreg-pwd1' id='enreg-pwd1' maxlength='16' required='required' placeholder='Mot de passe (6 - 16 caracteres)'>
+            <input class='w3-input w3-button w3-hover-white w3-margin-top w3-margin-bottom' type='password' name='enreg-pwd1' id='enreg-pwd1' maxlength='16' required='required' placeholder='Mot de passe (6 - 16 caractères)'>
             <span id='pwd-length-validation'></span>
 
             <input class='w3-input w3-button w3-hover-white w3-margin-top w3-margin-bottom' type='password' name='enreg-pwd2' id='enreg-pwd2' maxlength='16' required='required' placeholder='Confirmation du mot de passe'>
@@ -395,16 +395,22 @@ $lvlSelect->execute();
 
                 <select class='w3-button w3-hover-white w3-margin-top w3-margin-bottom w3-margin-right' name='enreg-niveau' id='enreg-niveau'>
                   <option value='Niveau' disabled='disabled' selected='selected'>Niveau</option>
-                  
-                  <?php
-                  while ($lvlResult = $lvlSelect->fetch()){
-                    echo '<option value=' .$lvlResult["niveau"]. '>' .$lvlResult["niveau"]. '</option>';
-                  }
-                  ?>
+                  <option value='L1'>L1</option>
+                  <option value='L2'>L2</option>
+                  <option value='L3 ME'>L3 ME</option>
+                  <option value='L3 IO'>L3 IO</option>
+                  <option value='M1 ACT'>M1 ACT</option>
+                  <option value='MI FIN'>M1 FIN</option>
+                  <option value='MI SI'>M1 SI</option>
+                  <option value='MI SBD'>M1 SBD</option>
+                  <option value='M2 ACT'>M2 ACT</option>
+                  <option value='M2 FIN'>M2 FIN</option>
+                  <option value='M2 SI'>M2 SI</option>
+                  <option value='M2 SBD'>M2 SBD</option>
                 </select>
 
                 <input class='w3-button w3-hover-white w3-margin-top w3-margin-bottom w3-margin-left' type='checkbox' name='delegue' value='1' id='delegue'>
-                <label id='delegue-label' for='delegue'>Delegue</label>
+                <label id='delegue-label' for='delegue'>Délégué</label>
                 <span id='niv-validation'></span>
               </div>
             </div>

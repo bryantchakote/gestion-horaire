@@ -57,7 +57,7 @@ $lvlItem = $lvlSelect->rowCount();
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Heures entree - sortie</title>
+    <title>Heures entrée - sortie</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -145,7 +145,7 @@ $lvlItem = $lvlSelect->rowCount();
           <a href="general_stats.php" class="w3-bar-item w3-button w3-hover-red w3-padding">Statistiques</a>
         </div>
         
-        <button type="submit" name="logout" value="logout" id="logout" class="w3-display-bottommiddle"><b>Deconnexion</b></button>
+        <button type="submit" name="logout" value="logout" id="logout" class="w3-display-bottommiddle"><b>Déconnexion</b></button>
       </form>  
     </nav>
     
@@ -167,13 +167,13 @@ $lvlItem = $lvlSelect->rowCount();
       
       <!-- Content -->
         <form method="post" action="../../models/actions.php" id="actions" class="w3-row-padding w3-padding-large w3-center">
-          <span><b>Journee du</b></span>
+          <span><b>Journée du</b></span>
           <input type="date" name="in-out-day" id="in-out-day" value="<?php echo (isset($selectedDate) && $selectedDate) ? $_SESSION['selected-date'] : "" ?>" class="w3-button w3-hover-red w3-padding-small">
 
           <table class="w3-table-all w3-centered w3-hoverable w3-margin-top w3-margin-bottom">
             <tr>
-              <th>Noms &amp; prenoms</th>
-              <th>Entree</th>
+              <th>Noms &amp; prénoms</th>
+              <th>Entrée</th>
               <th>Sortie</th>
             </tr>
             
@@ -238,7 +238,7 @@ $lvlItem = $lvlSelect->rowCount();
           </table>
           
           <button type="submit" name="in-out-confirm" value="in-out-confirm" class="w3-button w3-blue-grey w3-hover-red w3-padding">Confirmer</button>
-          <button type="reset" class="w3-button w3-blue-grey w3-hover-red w3-padding">Reinitialiser</button>
+          <button type="reset" class="w3-button w3-blue-grey w3-hover-red w3-padding">Réinitialiser</button>
         </form>
     </div>
     

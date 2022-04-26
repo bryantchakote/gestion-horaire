@@ -291,7 +291,7 @@ $timeInResult5 = $timeIn5->fetch();
           <a href="general_stats.php" class="w3-bar-item w3-button w3-hover-red w3-padding">Statistiques</a>
         </div>
         
-        <button type="submit" name="logout" value="logout" id="logout" class="w3-display-bottommiddle"><b>Deconnexion</b></button>
+        <button type="submit" name="logout" value="logout" id="logout" class="w3-display-bottommiddle"><b>Déconnexion</b></button>
       </form>  
     </nav>
     
@@ -337,7 +337,7 @@ $timeInResult5 = $timeIn5->fetch();
       ?>
       
       <!-- Content -->
-      <h5 class="w3-margin w3-text-blue-grey "><b>Statistiques generales</b></h5>
+      <h5 class="w3-margin w3-text-blue-grey "><b>Statistiques générales</b></h5>
             <div class="w3-margin">
               <div class="w3-left" id="chart-left">
                 <canvas id="basiclinechart"></canvas>
@@ -346,16 +346,16 @@ $timeInResult5 = $timeIn5->fetch();
                 <canvas id="basiclinechart_delays"></canvas>
               </div>
             </div><br><br><br><br><br><br><br><br><br><br><br><br>
-      <h5 class="w3-margin w3-text-blue-grey"><b>Detail journee</b></h5>
+      <h5 class="w3-margin w3-text-blue-grey"><b>Détail journée</b></h5>
         <form method="post" action="../../models/actions.php" id="actions" class="w3-row-padding w3-padding-large w3-center">
-          <span><b>Journee du</b></span>
+          <span><b>Journée du</b></span>
           <input type="date" name="general-stats-day" id="general-stats-day" value="<?php echo (isset($_SESSION['general-stats-day']) && !empty($_SESSION['general-stats-day'])) ? $_SESSION['general-stats-day'] : $actualDate ?>" class="w3-button w3-hover-red w3-padding-small">  
         </form>
       
           <table class="w3-table-all w3-centered w3-hoverable w3-margin-top w3-margin-bottom">
             <tr>
-              <th>Noms &amp; prenoms</th>
-              <th>Heure d'entree</th>
+              <th>Noms &amp; prénoms</th>
+              <th>Heure d'entrée</th>
               <th>Heure de sortie</th>
               <th>Absences</th>
               <th>Motif</th>
@@ -693,7 +693,7 @@ $timeInResult5 = $timeIn5->fetch();
 		data: {
 			labels: ["< 7H", "7H - 7H30","7H30 - 8H","8H - 8H30","> 8H30"],
 			datasets: [{
-				label: "Arrivees",
+				label: "Arrivées",
 				fill: false,
                 backgroundColor: '#C12724',
 				borderColor: '#C12724',
